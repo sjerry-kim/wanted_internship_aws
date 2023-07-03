@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: "11th"
+          ref: "main"
       - run: npm ci # npm clean install
       - run: npm run build
       - name: deploy to s3 # 스텝(?)의 이름지정
